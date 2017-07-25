@@ -1,28 +1,28 @@
-# ANGULAR EXERCICES
+# MyApp
 
-## Exercice 1
-* Afficher un **titre** et un **paragraphe** dont les propriétés sont déclarées dans la classe **AppComponent** 
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.3.
 
-## Exercice 2
-* Afficher au **click** la date et l'heure actuelle en créant une méthode **afficherDate** dans la classe **AppComponent**
+## Development server
 
-## Exercice 3
-* Afficher au **click** le message "Angular c'est de la bombe !!!" dans une boite de dialogue **alert** 
-en créant une méthode **afficheAlert** dans votre classe **AppComponent**
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Exercice 4
-* Afficher une liste des langages étudiés à CODA(html,css,javascript...) en utilisant ***ngFor** dans **app.component.html**
+## Code scaffolding
 
-## Exercice 5
-* Au **click** sur un bouton animer le personage de l'**image1.png** en modifiant la propriété **margin-left** de l'image en créant une méthode **animer**
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
 
-## Exercice 6
-* Créer un **carrousel** d'images qui change au **click** sur un bouton en créant une méthode **caroussel** 
- et une propriété qui contient un tableau des **urls** des images : **image2.jpg, image3.jpg,image4.jpg**
- 
-## Exercice 7
-#### Liste de courses 
-* Afficher une liste de course avec les données du tableau suivant: **['pain', 'lait', 'beurre', 'farine']**
-* Créer un champ de saisie(input) qui permet d'ajouter un produit à une liste de course lors d'un **click** sur le bouton**ajouter**
-* Au **click** sur un produit changer l'**opacité** du texte et **rayer** le produit
-* Au **click** sur un langage déja modifié en opacité et rayé, rétablir l'apparence d'origine
+## Build
+
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+
+## Running unit tests
+
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Before running the tests make sure you are serving the app via `ng serve`.
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
