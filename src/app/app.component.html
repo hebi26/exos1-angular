@@ -2,16 +2,25 @@
 <h1>{{titre}}</h1><p>{{paragraphe}}</p><hr>
 <button (click)="displaydate()">Click</button>
 <p>{{today | date:'fullDate'}}, {{today | date:'shortTime'}}</p><hr>
+
+
 <button (click)="afficheAlert()">Click</button><hr>
+
+
 <ul *ngFor="let matiere of matieres">
   <li>{{matiere}}</li>
 </ul>
 <br>
+
+
+
 <div id="cadre"><img  id="homme" src="./assets/image1.png"></div>
 <button (click)="walk()">Click</button><hr>
+
+
 <h3>Liste de courses : </h3>
   <ul *ngFor="let item of list; let i=index">
-    <li>{{item}}<button (click)= "delete(i)"> X </button></li>
+    <li class="style1" (click)="list[i].clicked = !list[i].clicked" [ngClass]="{'style2' : list[i].clicked}">{{item.name}}</li>
   </ul>
   <input #newproduct Placeholder="Ajoutez un produit sur la liste....">
   <button (click)="addProduct(newproduct.value)">Ajouter</button><hr>

@@ -14,7 +14,16 @@ export class AppComponent {
   matieres = ['html', 'css', 'php', 'js', 'jquery', 'sql', 'angular'];
   carrousel = ['./assets/image2.jpg', './assets/image3.jpg', './assets/image4.jpg'];
   i: number =0;
-  list=['pain', 'lait', 'beurre', 'farine'];
+
+  my_Class: string ="style1";
+
+  list=[
+    {'name' : 'pain', clicked : false},
+    {'name' : 'lait', clicked : false},
+    {'name' : 'beurre', clicked : false},
+    {'name' : 'farine', clicked : false}
+  ];
+
 
   displaydate(){
     this.today = Date.now();
@@ -43,10 +52,11 @@ export class AppComponent {
     }
   }
   addProduct(newproduct: string){
-  this.list.push(newproduct);
+    let chose = {'name' : newproduct, clicked : false};
+  this.list.push(chose);
   }
 
-  delete(i){
-    this.list.splice(i, 1);
+  toggle(i){
+    this.list[i].clicked = true;
   }
 }

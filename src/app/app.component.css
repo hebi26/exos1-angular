@@ -5,3 +5,10 @@
 #homme{
   position: relative;
 }
+.style1{
+    color: black;
+}
+.style2 {
+    color: darkred;
+    text-decoration: line-through;
+}
